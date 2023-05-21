@@ -1,19 +1,20 @@
 import LayoutContainer from '@/containers/LayoutContainer';
 import React from 'react';
-
-const PrincipalPage = () => {
+import './../../css/modal.css';
+import ReparacionesList from './components/ReparacionesList';
+const Reparaciones = () => {
   return (
     <LayoutContainer>
       <div className='card'>
         <div className='card-header'>
-          <h1>Home</h1>
+          <h1>Reparaciones</h1>
         </div>
         <div className='card-body'>
-            <h5 className='text-center'>Home</h5>
+          <ReparacionesList />
         </div>
       </div>
     </LayoutContainer>
   );
 };
 
-export default PrincipalPage;
+export default Reparaciones

@@ -1,19 +1,20 @@
+import ClientesList from '@/app/clientes/components/ClientList';
 import LayoutContainer from '@/containers/LayoutContainer';
 import React from 'react';
-
-const PrincipalPage = () => {
+import './../../css/modal.css';
+const ClientesPage = () => {
   return (
     <LayoutContainer>
       <div className='card'>
         <div className='card-header'>
-          <h1>Home</h1>
+          <h1>Clientes</h1>
         </div>
         <div className='card-body'>
-            <h5 className='text-center'>Home</h5>
+          <ClientesList />
         </div>
       </div>
     </LayoutContainer>
   );
 };
 
-export default PrincipalPage;
+export default ClientesPage;
